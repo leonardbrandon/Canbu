@@ -1,0 +1,35 @@
+We first set up our migrations directory by running:
+1. one time only:
+  flask db init
+
+2. after models.py and forms.py are edited lets create / update the migration file
+  flask db migrate -m "canbu table created"
+
+3. once the db migration file is generated, we do the actual upgrade 
+  flask db upgrade
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+If you get this error:
+Error: Could not locate Flask application.
+You did not provide the FLASK_APP environment variable.
+
+Then run the following code:
+
+MacOS/Linux users run:
+export FLASK_APP=BasicModelApp.py
+
+Windows Users need to run:
+set FLASK_APP=BasicModelApp.py
+
+This allows the flask command line tools to understand what Flask App you are
+referencing. More info on this: http://flask.pocoo.org/docs/0.12/cli/
+
+In general the flask app should be set to whatever flask app
+you happen to be working on.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

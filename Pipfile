@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+alembic = "==0.9.9"
+certifi = "==2018.1.18"
+click = "==6.7"
+itsdangerous = "==0.24"
+python-dateutil = "==2.7.2"
+python-editor = "==1.0.3"
+six = "==1.11.0"
+wincertstore = "==0.2"
+Flask = "==0.12.2"
+Flask-Migrate = "==2.1.1"
+Flask-SQLAlchemy = "==2.3.2"
+Flask-WTF = "==0.14.2"
+Jinja2 = "==2.10"
+Mako = "==1.0.7"
+MarkupSafe = "*"
+SQLAlchemy = "==1.2.6"
+Werkzeug = "==0.14.1"
+WTForms = "==2.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
