@@ -1,93 +1,50 @@
 # Canbu
 
 
+## About
 
-## Getting started
+Canbu is a cannabis consumption tracking program. It was created to help people struggling with Cannabis addictions to monitor & understand their cannabis usage, and act as a motivational aid in their recovery journey.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Why it works
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Canbu’s algorithm uses behavioural economics to map a user's consumption patterns and create a real time value chart or ‘life chart’. Research shows that we tend to give higher priority to things that are happening in the near present vs things that will happen in the future. Addictions often provide an immediate escape from a number of root causes compounding the negative effects of future consequences. Canbu’s life chart provides immediate feedback and a more accurate snapshot of wellbeing helping to counteract the impact of short term prioritisation. 
 
-## Add your files
+There are two ways that this can help. First is the immediate gratification of either seeing positive results that come from abstinence or the negative results or loss leader effect that comes from losing value in the case of consumption. 
 
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+The second is in seeing an accurate picture of well being. Feelings about ‘how it's going’ can vary widely from actual results based on a user's mood and perspective. This can lead to relapse or compound relapse if they occur.  Seeing a snapshot of your life chart can give users a more accurate picture of well-being providing hope in some cases or warning in others depending on the situation.  
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/bcrcollaborative/canbu.git
-git branch -M main
-git push -uf origin main
-```
+## How we calculate
 
-## Integrate with your tools
+Absence of cannabis use causes a users life chart value to go up and cannabis usage causes the value to go down. We track THC amounts at the time of purchase, and in combination with a user's custom tolerance levels the algorithm will convert their empirical data and plot their well being on a graph. 
 
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://gitlab.com/bcrcollaborative/canbu/-/settings/integrations)
+Based on an individual's user data, we are able to create a baseline. This is a line which represents a user's highest allowable usage amount before ‘their life starts falling apart’. Consumption levels that cause users' value to go below this line means things are not going well and additional help in their recovery journey is required. Users who maintain abstinence or are actively decreasing consumption will move away from their baseline. 
 
-## Collaborate with your team
+The goal for all users is to decrease their cannabis consumption and as they see increases in their well being this will be reflected in their life chart. We are working on additional features / rewards / incentives / milestones to help with this goal.
 
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+
 
 ## Test and Deploy
 
 Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- [ ] https://gitlab.com/bcrcollaborative/canbu (https://gitlab.com/bcrcollaborative/canbu)
 
 ***
 
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:6256ba87d4481193beda38d65bc84abc?https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+![image](https://user-images.githubusercontent.com/86984198/152203042-392a3218-e0ae-4df4-8667-fa2894ca7730.png)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Data Sample
+![Sample User Data](https://user-images.githubusercontent.com/86984198/152203580-b909d994-f262-4fec-9c77-1594e0427f4b.png)
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Branding
+![Artboard 1](https://user-images.githubusercontent.com/86984198/152203757-617324bd-2748-4f9b-a4c2-021d471d913c.svg)
+![Artboard 2](https://user-images.githubusercontent.com/86984198/152203763-16c30fab-03f0-4e90-9b5e-b2be86d30243.svg)
+![Artboard 3](https://user-images.githubusercontent.com/86984198/152203765-4c1308fe-4844-4820-9bd9-fd90f979cfdd.svg)
+![Artboard 4](https://user-images.githubusercontent.com/86984198/152203766-bcc65366-4fb1-4acc-846d-58db959ab81c.svg)
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Development by @BrandonJLeonard & @RoyCampbell
 
